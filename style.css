@@ -242,13 +242,14 @@ header nav ul li a {
 
     header {
         z-index: 1;
+        padding-bottom: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #282F35;
     }
 
     header nav {
-        display: none;
-    }
-
-    #header.scroll {
         display: none;
     }
 
@@ -738,7 +739,7 @@ figure figcaption {
 }
 
 .form {
-    width: 700px;
+    width: 50%;
     margin: 0 auto;
     font-family: 'Noto Serif JP', serif;
 }
@@ -802,4 +803,33 @@ footer {
     width: 100%;
     line-height: 80px;
     font-family: "Noto_Serif JP", sans-serif;
+}
+
+@media (max-width:768px) {
+    .contact__top {
+        padding: 20px 0 50px;
+    }
+
+    .contact__top h2 {
+        margin-top: 190px;
+        font-weight: bold;
+    }
+
+    .contact__top .main__title-bottom--left {
+        font-size: 2rem;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .form {
+        width: 85%;
+    }
+
+    .form ul {
+        display: block;
+    }
+
+    .form ul li {
+        margin-bottom: 25px;
+    }
 }
